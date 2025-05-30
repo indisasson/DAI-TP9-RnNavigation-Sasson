@@ -11,7 +11,7 @@ export default function BottomTabs(){
     <Tab.Navigator>
         <Tab.Screen name="StackA" component={StackANavigator}/>
         <Tab.Screen name="StackB" component={StackBNavigator}/>
-        <Tab.Screen name="StackC" component={StackCNavigator}/>
+        <Tab.Screen name="StackC" component={StackCNavigator}  options={{tabBarIcon: ({ color }) => (<Ionicons name="person" size={24} color={color} />),}}/>
     </Tab.Navigator>
 }
 
