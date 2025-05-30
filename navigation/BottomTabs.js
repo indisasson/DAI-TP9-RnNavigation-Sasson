@@ -5,13 +5,19 @@ import StackANavigator from './StackANavigator';
 import StackBNavigator from './StackBNavigator';
 import StackCNavigator from './StackCNavigator';
 
-const Tab = createBottomTabNavigator();
 
 export default function BottomTabs(){
-    <Tab.Navigator>
-        <Tab.Screen name="StackA" component={StackANavigator}/>
-        <Tab.Screen name="StackB" component={StackBNavigator}/>
-        <Tab.Screen name="StackC" component={StackCNavigator}  options={{tabBarIcon: ({ color }) => (<Ionicons name="person" size={24} color={color} />),}}/>
-    </Tab.Navigator>
+    const Tab = createBottomTabNavigator();
+    console.log("LLEGO")
+    return (
+
+        
+        <Tab.Navigator>
+        <Tab.Screen name="StackA" component={StackANavigator} options={{tabBarIcon: () => (<Ionicons name="person" size={24} color="yellow" />),}}/>
+        <Tab.Screen name="StackB" component={StackBNavigator} options={{tabBarIcon: () => (<Ionicons name="person" size={24} color="orange" />),}}/>
+        <Tab.Screen name="StackC" component={StackCNavigator}  options={{tabBarIcon: () => (<Ionicons name="person" size={24} color="red" />),}}/>
+        </Tab.Navigator>
+            )
+    
 }
 
