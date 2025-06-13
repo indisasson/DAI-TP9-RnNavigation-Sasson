@@ -8,8 +8,8 @@ const Stack = createNativeStackNavigator();
 export default function StackBNavigator() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="ScreenC1" component={ScreenC1} />
-      <Stack.Screen name="ScreenC2" component={ScreenC2} />
+      <Stack.Screen name="AYUDA" component={ScreenC1} />
+      <Stack.Screen name="CONSEJOS" component={ScreenC2} />
     </Stack.Navigator>
   );
 }
